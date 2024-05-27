@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-6-dars</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div class="title">
+          
+        </div>
+        <div class="cover">
+          <img
+            class="cover-img"
+            id="cover-image"
+            src="./images/sherali-jorayev-birinchi-muhabbatim.webp"
+            alt="cover"
+            width="400"
+            height="300"
+          />
+        </div>
+        <audio
+          class="audio"
+          src="./sounds/sherali-jorayev-birinchi-muhabbatim.mp3"
+        ></audio>
+        <div class="song"><h2>Sherali jorayev</h2></div>
+        <div class="time">
+          <span class="current-time">0:00</span>
+          <span class="duration">0:00</span>
+        </div>
+        <div class="progress__container">
+          <div class="progress"></div>
+        </div>
+        <div class="buttons">
+          <div class="buttons-wrapper">
+            <div class="btn prev">
+              <i class="fa-solid fa-backward-fast controller"></i>
+            </div>
+            <div class="btn play">
+              <i class="fa-solid fa-play img-src controller"></i>
+            </div>
+            <div class="btn next">
+              <i class="fa-solid fa-forward-fast controller"></i>
+            </div>
+          </div>
+        </div>
+        <div class="sound-wrapper">
+          <div class="span-wrapper">
+            <span>Voise :</span>
+            <span class="volume-value">100</span>
+          </div>
+          <div class="voise__wrapper">
+            <i class="fa-solid fa-volume-low"></i>
+            <input class="range" type="range" min="0" max="100" step="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./music.js"></script>
+  </body>
+</html>
